@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    gap: 1px; /* Set gap to 0 for joined appearance */
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center; /* Center items vertically */
+    align-items: flex-start; /* Center items horizontally */
+    flex-wrap: wrap;
+    height: 600px; /* Maintain height for vertical centering */
+}
+
+.container > .children {
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    color: rgb(34, 24, 105);
+    margin: 0; /* No margin to ensure they are joined */
+}
